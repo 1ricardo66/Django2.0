@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
+password = open('/home/ricardo/venv/django/SECRET_KEY/key','r')
+key = password.read()
+password.close()
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -20,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ph*lbuda3s8*u(9qbpym43=kn40*m_qc$$b_7ukf+p4mmw-%%7'
+SECRET_KEY = key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
