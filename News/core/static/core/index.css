@@ -1,0 +1,42 @@
+body{
+  /* background-color: rgb(185, 185, 185); */
+  /* background-color: rgba(237, 232, 226, 0.74); */
+ /* background-color: rgba(0, 0, 0, 0.66); */
+  background-color: rgb(125, 125, 125);
+}
+
+.header{
+  font-size: 27px;
+  text-align: center;
+}
+.sub-body{
+
+    background-color: #fff;
+    max-width: 1000px;
+    min-height: 550px;
+    margin:4% auto;
+    /* margin-top: 2%; */
+    padding:20px;
+    border-radius: 1% ;
+    font-size:18px;
+    color:black;
+    border: solid 1px rgba(0, 0, 0, 0.57);
+}
+
+.title h2{
+  border-bottom: solid 1px rgb(203, 203, 203);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.sub-body p{
+  letter-spacing: 1px;
+}
+
+#published:hover{
+  text-decoration: underline;
+}
+
+#tags:hover{
+  text-decoration: underline;
+
+}

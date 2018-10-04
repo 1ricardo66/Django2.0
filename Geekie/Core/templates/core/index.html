@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" name="info" action="index.html" method="post">
+      <input type="text" name="cpf" value="cpf" placeholder="CPF" maxlength="11">
+      <input type="password" name="senha" value="senha" placeholder="Senha" maxlength="16">
+      <input type="submit" name="enviar" value="enviar">
+    </form>
+    <p>putzz</p>
+    {% for new in pessoa %}
+
+    <p>{{new.nome}}</p>
+
+    {%endfor%}
+
+
+  </body>
+</html>

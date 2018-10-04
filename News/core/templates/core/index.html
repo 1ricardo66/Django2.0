@@ -1,0 +1,30 @@
+{% extends 'core/base.html'%}
+
+      {%load static %}
+      {%block static %}
+      <link rel="stylesheet" href="{% static 'core/index.css'%}">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+      {%endblock%}
+  {%block body%}
+  <div class="header">
+    <p id="title">The NewsPaper</p>
+  </div>
+  <div class="sub-body">
+    {# {% if {{new.status}}%} #}
+    {% for new in news %}
+      {% if new.status == "Published"%}
+      <div class="title">
+        <h2>{{new.title}}</h2><br>
+      </div>
+      <p>{{new.news}}</p><br>
+      <p id="author" >Author: {{new.author}}</p>
+      <p id="published">Published: {{new.date}}</p>
+      {%if new.tags != '' %}
+        <p id="tags">Tags: {{new.tags}}</p>
+          {%endif%}
+        {%endif%}
+
+    {%endfor%}
+    {# {% endif %} #}
+  </div>
+{%endblock%}

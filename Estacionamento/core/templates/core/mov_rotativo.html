@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MovRotativo</title>
+  </head>
+  <body>
+    {% for mov in mov_rot %}
+      <p>{{mov.checkin}} - {{mov.veiculo.placa}}</p>
+    {% endfor %}
+  </body>
+</html>
